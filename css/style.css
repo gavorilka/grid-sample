@@ -31,3 +31,28 @@
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: space-evenly;
 }
+.areas{
+	display: grid;
+	grid-template: 150px repeat(2, 1fr) 50rem/300px 1fr 10rem;
+	grid-template-areas: 
+	"head head head"
+	"as main main"
+	"as main main"
+	"foo foo foo";
+}
+.header{
+	grid-area: head;
+	background-color: red;
+}
+.main{
+	grid-area: main;
+	background: pink;
+}
+.footer{
+	grid-area: foo;
+	background: green;
+}
+.asside{
+	grid-area: as;
+	background: blue;
+}

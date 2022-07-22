@@ -1,5 +1,6 @@
 .one{
 	background: red;
+	align-self: end;
 }
 .two{
 	background: yellow;
@@ -8,7 +9,8 @@
 }
 .three{
 	background: yellowgreen;
-	grid-row: 1/4
+	grid-row: 1/4;
+	justify-self: end;
 }
 .four{
 	background: pink;
@@ -17,13 +19,15 @@
 }
 .five{
 	background: honeydew;
-	grid-row: 1;
+
 }
 .six{
 	background-color: blue;
 }
 .wrap{
 	display: grid;
+	grid-auto-flow: column;
 	grid-template-rows: 50px 1fr minmax(100px, 1fr) 6em 50% auto;
 	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-evenly;
 }

@@ -1,0 +1,22 @@
+.one{
+	background: red;
+}
+.two{
+	background: yellow;
+}
+.three{
+	background: yellowgreen;
+}
+.four{
+	background: pink;
+}
+.five{
+	background: honeydew;
+}
+.six{
+	background-color: blue;
+}
+.wrap{
+	display: grid;
+	grid-template-rows: 50px 1fr minmax(100px, 1fr) 6em 50% auto;
+}
